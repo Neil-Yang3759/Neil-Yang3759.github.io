@@ -5,8 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .header{
+            position: sticky;
+            top: 0;
+            height: 40px;
+            width: 100%;
+            display: flex;
+            background-color: #00142d;
+            justify-content: flex-end;
+        }
+        .head{
+            width: 230px;
+            margin: 10px;
+            margin-right: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-decoration: none;
+            color: #fff;
+        }
+        .head a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .title{
+            position: sticky;
+            top: 40px;
+            height: 85px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 40px;
+            align-items: center;
+            background-color: #fff;
+        }
+        .title nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 650px;
+            margin-right: 50px;
+        }
+        .title nav a{
+            text-decoration: none;
+            color: #00142d;
+        }
+        .title #免費試用{
+            border-radius: 20px;
+        }
+        .start_pic img{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>HW2</h1>
+    <div class="header">
+        <div class="head">
+            <button>B</button>
+            <div>|</div>
+            <a href="#">幫助中心</a>
+            <a href="#">登入網店</a>
+        </div>
+    </div>
+    <div class="title">
+        <a class="logo-wrap" href="/">
+            <img src="https://img.shoplineapp.com/media/image_clips/60811bb98a60d74a03808d4d/original.png?1619073977" width="160" height="27">
+        </a>
+        <nav>
+            <a href="#">開店服務</a>
+            <a href="#">方案費用</a>
+            <a href="#">客戶案例</a>
+            <a href="#">開店說明會</a>
+            <a href="#">開店諮詢</a>
+            <a href="#">更多解決方案</a>
+            <a href="#">其他資源</a>
+        </nav>
+        <img id="免費試用" src="https://fakeimg.pl/90x39/200">
+    </div>
+    <div class="start_pic">
+        <img src="https://fakeimg.pl/300x160/200">
+    </div>
 </body>
 </html>
