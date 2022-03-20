@@ -174,12 +174,26 @@
     justify-content: space-around;
 }
 .brand .content{
+    display: flex;
     height: 330px;
     margin-top: 80px;
-    border: 1px solid red;
+}
+.brand .content .text{
+    width: 40%;
+
 }
 .brand .content .text a{
+    display: block;
+    margin-bottom:30px;
     text-decoration: none;
     color: blue;
-    font-size: 17px;
+    font-size: 16px;
+}
+.brand .content .text p{
+    display: block;
+    line-height: 30px;
+    margin-bottom: 70px
+}
+.brand .content .pic{
+    margin-left: 50px;    
 }
