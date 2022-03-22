@@ -208,6 +208,7 @@
     /* width: 90%; */
     display: flex;
     margin: auto;
+    justify-content: center;
 }
 .foot .item{
     background-color: #00142d;
