@@ -1,54 +1,113 @@
-/* *{outline:1px #f00 solid} */
-.header{
+*{outline:1px #f00 solid}
+header{
     position: fixed;
     top: 0;
-    height: 40px;
     width: 100%;
-    display: flex;
-    background-color: #00142d;
-    justify-content: flex-end;
+    /* align-items: center; */
 }
-.head{
+header .top{
+    height: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    background-color: #00142d;
+    align-items:center;
+}
+header .top .login{
     width: 230px;
-    margin: 10px;
     margin-right: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
+    align-items:center;
+}
+header .top .login div{
+    color: #fff;
+
+}
+header .top .login a{
     text-decoration: none;
     color: #fff;
 }
-.head a{
-    text-decoration: none;
-    color: #fff;
-}
-.title{
-    position: sticky;
-    top: 40px;
-    height: 75px;
+
+header .nav-head{
+    height: 85px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 40px;
     align-items: center;
     background-color: #fff;
 }
-.title nav{
+header .nav-head nav{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    width: 650px;
-    margin-right: 50px;
+    /* width: 50%; */
+    flex-grow: 1;
+    padding: 0 100px 0 50px;
 }
-.title nav a{
+header .nav-head nav a{
     text-decoration: none;
     color: #00142d;
 }
-.title #免費試用{
+header .nav-head a #btn-try{
     border-radius: 20px;
 }
-.start_pic img{
-    width: 100%;
+.news{
+    margin-top: 125px;
+    height: 670px;
+    display: flex;
+    align-items: center;
+    background-color: #00142d;
+    justify-content: center;
+}
+.news section{
+    width: 40%;
+    height: 65%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    
+    color: #fff;
+}
+.news section h2{
+    font-size: 2em; 
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.news section h2 span{
+    color: rgb(33, 226, 146);
+}
+.news section p{
+    display: block;
+    width: 80%;
+    line-height: 1.5em;
+}
+.news section input{
+    width: 80%;
+    height: 2em;
+    background-color: #00142d;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.news section #free-try{
+    width: 80%;
+    height: 10%;
+    text-decoration: none;
+    font-size: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #0061ff;
+    border-radius: 20px;
+    color: #fff;
+}
+.news img{
+    width: 50%;
+    /* width: 510px; */
+    /* height: 371px; */
+    height: 65%;
 }
 .contentTitle{
     height: 400px;
@@ -117,12 +176,13 @@
     background-color: #f4f5f7;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 .icon .title{
-    width: 100%;
-    justify-content: center;
+    /* width: 100%; */
     margin-top: 90px;
+    text-align: center;
     /* margin-bottom: 80px; */
     font-weight: bold;
     font-size: 35px;
@@ -249,6 +309,7 @@
     width: 280px;
     height: 50px;
     display: flex;
+    align-items: center;
 }
 .bottom .link a{
     display: block;
