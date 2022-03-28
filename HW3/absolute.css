@@ -1,4 +1,4 @@
-/* *{outline:1px #f00 solid} */
+*{outline:1px #f00 solid}
 
 main{
     width: 960px;
@@ -9,6 +9,7 @@ main{
 .block-L{
     display: flex;
     position: relative;
+    margin-bottom: 650px;
 }
 .block-L .title{
     position: absolute;
@@ -68,6 +69,38 @@ main{
     width: 440px;
     height: 290px;
     z-index: -1;
+}
+.block-L .detail{
+    position: relative;
+    top: 380px;
+    left: -255px;
+    background-color: #ddd;
+    width: 680px;
+    height: 235px;
+    z-index: 1;
+    padding: 20px;
+    font-size: 1.1em;
+}
+.block-L .detail span{
+    color: #c00;
+    display: block;
+    margin: 5px;
+}
+.block-L .detail h4{
+    display:inline-block;
+    background-color: #000;
+    margin: 5px;
+    color: #fff;
+}
+.block-L .detail ul{
+    margin: 5px;
+    margin-left: 30px;
+    list-style-type:disc;
+    color: red;
+}
+.block-L .detail ul span{
+    color: #555;
+
 }
 .block-R{
     display: flex;
