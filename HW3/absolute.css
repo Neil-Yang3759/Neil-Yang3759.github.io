@@ -11,9 +11,13 @@ main{
     position: relative;
     margin-bottom: 650px;
 }
-.block-L .title{
-    position: absolute;
+.block-L article{
+    position: relative;
     top: -140px;
+    width: 355px;
+}
+.block-L .title{
+    position: relative;
     width: 355px;
     height: 140px;
     display: flex;
@@ -22,8 +26,6 @@ main{
     color: #ddd;
 }
 .block-L .title .title-num{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 120px;
@@ -36,10 +38,11 @@ main{
     text-align: center;
 }
 .block-L section{
-    width: 355px;
+    position: relative;
+    width: 315px;
     background-color: #000;
     color: #ddd;
-    padding: 25px 30px 25px 30px;
+    padding: 25px 20px 25px 20px;
     line-height: 2em;
     z-index: 1;
 }
@@ -67,7 +70,7 @@ main{
     top: -100px;
     right: -20px;
     width: 440px;
-    height: 290px;
+    height: 100%;
     z-index: -1;
 }
 .block-L .detail{
@@ -171,7 +174,7 @@ main{
     top: -80px;
     left: 30%;
     width: 440px;
-    height: 290px;
+    height: 100%;
     z-index: -1;
 }
 .block-R .detail{
