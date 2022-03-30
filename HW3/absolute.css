@@ -1,4 +1,4 @@
-/* *{outline:1px #f00 solid} */
+*{outline:1px #f00 solid}
 
 main{
     width: 960px;
@@ -25,17 +25,17 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 120px;
-    /* width: 120px; */
     text-align: center;
     transform:rotate(90deg)
 }
 .block-L .title h2{
     flex-grow: 1;
     font-size: 3.3em;
+    text-align: center;
 }
 .block-L section{
-    position: relative;
     width: 355px;
     background-color: #000;
     color: #ddd;
@@ -90,6 +90,7 @@ main{
     display:inline-block;
     background-color: #000;
     margin: 5px;
+    padding: 3px;
     color: #fff;
 }
 .block-L .detail ul{
@@ -105,10 +106,16 @@ main{
 .block-R{
     display: flex;
     position: relative;
+    margin-bottom: 650px;
+}
+.block-R article{
+    position: relative;
+    top: -140px;
+    right: -65%;
+    width: 355px;
 }
 .block-R .title{
-    position: absolute;
-    top: -140px;
+    position: relative;
     width: 355px;
     height: 140px;
     display: flex;
@@ -120,6 +127,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 120px;
     width: 120px;
     text-align: center;
@@ -128,6 +136,7 @@ main{
 .block-R .title h2{
     flex-grow: 1;
     font-size: 3.3em;
+    text-align: center;
 }
 .block-R section{
     position: relative;
@@ -164,4 +173,37 @@ main{
     width: 440px;
     height: 290px;
     z-index: -1;
+}
+.block-R .detail{
+    position: relative;
+    top: 380px;
+    left: -255px;
+    background-color: #ddd;
+    width: 680px;
+    height: 235px;
+    z-index: 1;
+    padding: 20px;
+    font-size: 1.1em;
+}
+.block-R .detail span{
+    color: #c00;
+    display: block;
+    margin: 5px;
+}
+.block-R .detail h4{
+    display:inline-block;
+    background-color: #000;
+    margin: 5px;
+    padding: 3px;
+    color: #fff;
+}
+.block-R .detail ul{
+    margin: 5px;
+    margin-left: 30px;
+    list-style-type:disc;
+    color: red;
+}
+.block-R .detail ul span{
+    color: #555;
+
 }
