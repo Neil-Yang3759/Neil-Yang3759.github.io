@@ -49,8 +49,6 @@ section p{
 .detail{
     grid-area: 7 / 2 / 9 / 6;
     background-color: #ddd;
-    width: 680px;
-    height: 235px;
     z-index: 1;
     padding: 20px;
     font-size: 1.1em;
@@ -85,6 +83,86 @@ section p{
 }
 .gray{
     grid-area: 1 / 5 / 4 / 10;
+    background-color: #eee;
+    z-index: -1;
+}
+.block:nth-child(even){
+    height: 890px;
+    display: grid;
+    grid-template:  65px 75px 205px 17px 18px 113px 63px 28px 1fr 75px / 10px 270px 324px 96px 95px 165px ;
+}
+.block:nth-child(even) .title{
+    grid-area: 1 / 4 / 3 / 7;
+    display: flex;
+    align-items: center;
+    background-color: #c00;
+    color: #ddd;
+}
+.block:nth-child(even) .title .title-num{
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    text-align: center;
+    transform:rotate(90deg)
+}
+.block:nth-child(even) .title h2{
+    flex-grow: 1;
+    font-size: 3.3em;
+    text-align: center;
+}
+.block:nth-child(even) section{
+    grid-area: 3 / 4 / 5 / 7;
+    background-color: #000;
+    color: #ddd;
+    padding: 25px 20px 25px 20px;
+    line-height: 2em;
+    z-index: 1;
+}
+.block:nth-child(even) section h3{
+    font-size: 1.6em;
+    margin: 5px;
+    font-weight: 500;
+}
+.block:nth-child(even) section p{
+    font-size: 1.2em;
+}
+.block:nth-child(even) .detail{
+    grid-area: 8 / 3 / 10 / 7;
+    background-color: #ddd;
+    z-index: 1;
+    padding: 20px;
+    font-size: 1.1em;
+}
+.block:nth-child(even) .detail span{
+    color: #c00;
+    display: block;
+    margin: 5px;
+}
+.block:nth-child(even) .detail h4{
+    display:inline-block;
+    background-color: #000;
+    margin: 5px;
+    padding: 3px;
+    color: #fff;
+}
+.block:nth-child(even) .detail ul{
+    margin: 5px;
+    margin-left: 30px;
+    list-style-type:disc;
+    color: red;
+}
+.block:nth-child(even) .detail ul span{
+    color: #555;
+}
+.block:nth-child(even) .main-pic{
+    grid-area: 3 / 2 / 9 / 5;
+    width: 100%;
+}
+.block:nth-child(even) .btn-play{
+    grid-area: 4 / 1 / 6 / 2;
+}
+.block:nth-child(even) .gray{
+    grid-area: 2 / 3 / 7 / 6;
     background-color: #eee;
     z-index: -1;
 }
