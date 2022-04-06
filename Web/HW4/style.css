@@ -77,8 +77,8 @@
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    border-bottom: 1px solid #eee;
     color: #000;
+    border-bottom: 1px solid #eee;
 }
 #btn-freeTry{
     background-color: #0061ff;
@@ -143,10 +143,16 @@
         justify-content: space-around;
         margin-left: calc((65 / 1280) * 100%);
         width: calc((640 / 1280) * 100%);
+        
     }
-    .btn-max-freeTry{
+    .logo-menu a{
+        text-decoration: none;
+        color: #000;
+    }
+    #btn-max-freeTry{
         margin-left: calc((185 / 1280) * 100%);
         background-color: #0061ff;
+        text-decoration: none;
         color: #fff;
         width: 90px;
         height: 37px;
