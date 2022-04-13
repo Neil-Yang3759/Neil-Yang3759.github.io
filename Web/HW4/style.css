@@ -137,6 +137,7 @@ main{padding: 70px 20px 0 20px;}
 }
 .row .paragraph a{
     text-decoration: none;
+    color: #0d66ff;
 }
 .graph{
     order: 1;
@@ -166,6 +167,72 @@ main{padding: 70px 20px 0 20px;}
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+.more-service{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 75px 0;
+    box-sizing: border-box;
+    background-color: #f4f5f7;
+}
+.more-service .topic{
+    width: 100%;
+    font-size: 2.3em;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.more-service .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.more-service .card .pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.more-service .card .pic img{
+    width: 65%;
+}
+.more-service .card .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+}
+.more-service .card .content h3{
+    margin: 10px;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+.more-service .card .content p{
+    font-weight: normal;
+    padding: 0 20px;
+    font-size: 2em;
+    line-height: 2em;
+}
+.foot-tryFree{
+    position: relative;
+    background-color: #172b4d;
+    display: flex;
+}
+.foot-tryFree .content{
+    background-color: transparent;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: normal;
+    flex-wrap: wrap;
+}
+.foot-tryFree .pic{
+    position: absolute;
+    left: 20%;
+    margin: 50px;
 }
 
 @media screen and (max-width: 991px){
@@ -369,5 +436,8 @@ main{padding: 70px 20px 0 20px;}
         width: 100%;
         vertical-align: top;
     }
-    
+    .more-service .card .content p{
+        width: 70%;
+    }
+
 }
