@@ -1,0 +1,40 @@
+.bg-purple{background-color: #7952b3;}
+header svg{color: white;}
+.ham {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+    position: relative;
+}
+.ham-origin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.ham-bar {
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    background: #ccc;
+    margin: -1px 0 0 -13px;
+    transition: all .5s;
+}
+.ham-bar--top {transform: translateY(-8px);}
+.ham-bar--bottom {transform: translateY(8px);}
+#nav-toggle {display: none;}
+#nav-toggle:checked ~ .ham .ham-bar--middle {opacity: 0;}
+#nav-toggle:checked ~ .ham .ham-bar--top {transform: rotate(-45deg);}
+#nav-toggle:checked ~ .ham .ham-bar--bottom {transform: rotate(45deg);}
+#nav-toggle:checked ~ .menu {transform: none;}
+.menu {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background-color: #7952b3;
+    /* 用 translate 把選單藏到畫面右邊去 */
+    transform: translateY(-150%);
+    transition: transform .5s;
+}
