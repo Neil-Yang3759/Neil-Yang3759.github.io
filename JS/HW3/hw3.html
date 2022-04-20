@@ -2165,12 +2165,11 @@
     <script>
 
         let heroArray = [];
-        let container;
         let btnCreateHeroArray, btnListHero, btnTableHero;
         let cards;
+        let container = document.getElementById("container");
 
         window.onload = function () {
-            container =  document.querySelector("#container");
             btnCreateHeroArray = document.getElementById("createhero");
             btnListHero = document.getElementById("listhero");
             btnTableHero = document.getElementById("tablehero");
@@ -2200,44 +2199,40 @@
                     heroArray.push(Card);
                 });
                 //2.清除container
-                document.querySelector("#container").innerHTML = "";
+                container.innerHTML = "";
+                btnCreateHeroArray.disabled = true;
             });
 
             btnListHero.addEventListener("click", function () {
+                container.innerHTML = "";
                 if(heroArray.length==0){
                     alert("請先建立陣列資料");
                     return;
                 }
                 //alert("以文字迭代英雄人物資料！");
-                else{
+                else if(container.innerHTML == ""){
                     heroArray.forEach((hero, index)=>{
                         let p = document.createElement("p");
                         p.innerText = JSON.stringify(hero);
-                        document.body.appendChild(p);
+                        container.appendChild(p);
                     });
                 }
             });
 
             btnTableHero.addEventListener("click", function(){
+                container.innerHTML = "";
                 if(heroArray.length==0){
                     alert("請先建立陣列資料");
                     return;
                 }
+                //防呆
                 // alert("以表格呈現英雄人物資料！");
-                else{
-                    let container = document.getElementById("container");
+                else if(container.innerHTML == ""){
                     let table = document.createElement("table");
                     table.setAttribute("class","table table-bordered table-striped table-dark");
                     let thead = document.createElement("thead");
                     let tbody = document.createElement("tbody");
-                    // let Card = {
-                    //     "id": id,
-                    //     "Name": Name,
-                    //     "explanation": explanation,
-                    //     "tag1": tag1,
-                    //     "tag2": tag2,
-                    //     "url": url,
-                    // }
+
                     let tr = document.createElement("tr");
                     Object.entries(heroArray[0]).forEach(entry =>{
                         const [key,value] = entry;
