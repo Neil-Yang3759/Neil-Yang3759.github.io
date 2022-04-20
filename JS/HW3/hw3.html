@@ -2185,8 +2185,6 @@
                     let id = index + 1;
                     let Name = card.querySelector(".card-body .card-title").innerHTML;
                     let explanation = card.querySelector(".card-body .card-text").innerHTML;
-                    // let detailLink = card.querySelector(".card-body #contentButton").src;
-                    // let videoLink = card.querySelector(".card-body #videoButton").src;
                     let tag1 = card.querySelector(".card-body #tag1").innerHTML;
                     let tag2 = card.querySelector(".card-body #tag2").innerHTML;
                     let url = card.querySelector(".headshot img").src;
@@ -2195,8 +2193,6 @@
                         "id": id,
                         "Name": Name,
                         "explanation": explanation,
-                        // "detailLink": detailLink,
-                        // "videoLink": videoLink,
                         "tag1": tag1,
                         "tag2": tag2,
                         "url": url,
@@ -2220,7 +2216,6 @@
                         document.body.appendChild(p);
                     });
                 }
-                
             });
 
             btnTableHero.addEventListener("click", function(){
@@ -2228,17 +2223,47 @@
                     alert("請先建立陣列資料");
                     return;
                 }
-                
                 // alert("以表格呈現英雄人物資料！");
-                alert("IDK~");
+                else{
+                    let container = document.getElementById("container");
+                    let table = document.createElement("table");
+                    table.setAttribute("class","table table-bordered table-striped table-dark");
+                    let thead = document.createElement("thead");
+                    let tbody = document.createElement("tbody");
+                    // let Card = {
+                    //     "id": id,
+                    //     "Name": Name,
+                    //     "explanation": explanation,
+                    //     "tag1": tag1,
+                    //     "tag2": tag2,
+                    //     "url": url,
+                    // }
+                    let tr = document.createElement("tr");
+                    Object.entries(heroArray[0]).forEach(entry =>{
+                        const [key,value] = entry;
+                        let th = document.createElement("th");
+                        th.innerHTML = key;
+                        tr.append(th);
+                    });
+                    thead.append(tr);
+                    table.append(thead);
+                    container.append(table);
 
+                    heroArray.forEach(hero => {
+                        let tr = document.createElement("tr");
+                        Object.entries(hero).forEach(item =>{
+                            const [key,value] = item;
+                            let td = document.createElement("td");
+                            td.innerHTML = value;
+                            tr.append(td);
+                        });
+                        tbody.append(tr);
+                    });
+                    table.append(tbody);
+                    container.append(table);
+                }
             });
         }
-
     </script>
-
-
-
 </body>
-
 </html>
