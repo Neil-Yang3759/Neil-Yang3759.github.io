@@ -1,0 +1,8 @@
+C:\Users\cloud\OneDrive - 中華大學\BuildSchool\Hackathon\1\1\bin\Debug\1.exe.config
+C:\Users\cloud\OneDrive - 中華大學\BuildSchool\Hackathon\1\1\bin\Debug\1.exe
+C:\Users\cloud\OneDrive - 中華大學\BuildSchool\Hackathon\1\1\bin\Debug\1.pdb
+C:\Users\cloud\OneDrive - 中華大學\BuildSchool\Hackathon\1\1\obj\Debug\1.csproj.AssemblyReference.cache
+C:\Users\cloud\OneDrive - 中華大學\BuildSchool\Hackathon\1\1\obj\Debug\1.csproj.SuggestedBindingRedirects.cache
+C:\Users\cloud\OneDrive - 中華大學\BuildSchool\Hackathon\1\1\obj\Debug\1.csproj.CoreCompileInputs.cache
+C:\Users\cloud\OneDrive - 中華大學\BuildSchool\Hackathon\1\1\obj\Debug\1.exe
+C:\Users\cloud\OneDrive - 中華大學\BuildSchool\Hackathon\1\1\obj\Debug\1.pdb
