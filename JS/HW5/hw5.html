@@ -27,7 +27,7 @@
     <main>
         <div class="container">
             <div class="d-flex justify-content-between">
-                <h2>iPad</h2>
+                <h2>iPad Air</h2>
                 <p>金額:$<span id="total">{1}</span>元</p>
             </div>
             <div class="row">
@@ -129,7 +129,7 @@
             //根據'已選的資料'找到目標data
             let tmp = iPadArray
             //每個規格都要篩選
-            specArray.forEach((spec,index)=>{
+            specArray.forEach((spec)=>{
                 tmp =tmp.filter(data => data[spec.key] == spec.choosed)
             })
             //測試記錄選中項
@@ -142,7 +142,7 @@
             // img_.src = tmp[0].picture
             //現在沒有圖檔,先以替代文字代替
             img_.alt=tmp[0].picture
-            img_.src = tmp[0].url;
+            img_.src = tmp[0].url
         }
     </script>
 </body>
