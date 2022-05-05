@@ -51,7 +51,7 @@
         //規格: specia
         //全域data
         let iPadArray = []
-        const url ="https://raw.githubusercontent.com/B10703037/FileStorage_/main/ipadAir.json"
+        const url ="https://raw.githubusercontent.com/Neil-Yang3759/Neil-Yang3759.github.io/main/JS/HW5/ipadAir.json"
         let xhr = new XMLHttpRequest();
         xhr.onload =()=>{
             //收到回應
@@ -74,10 +74,10 @@
         ]
         const pic = {
             太空灰色:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664",
-            粉紅色:"",
-            紫色:"",
-            藍色:"",
-            星光色:""
+            粉紅色:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-pink-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066399526",
+            紫色:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-purple-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066730601",
+            藍色:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-blue-202203?wid=470&hei=556&fmt=png-alpha&.v=1645065732688",
+            星光色:"https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-starlight-202203?wid=470&hei=556&fmt=png-alpha&.v=1645895139236"
         } 
         function afterResponse(){
             //重組資料
@@ -134,7 +134,7 @@
             })
             //測試記錄選中項
             // console.log('specArray',specArray);
-            // console.log('tmp',tmp);
+            console.log('tmp',tmp);
             //防呆
             if(tmp.length!=1)return
             //目標資料就是tmp[0]
@@ -142,7 +142,7 @@
             // img_.src = tmp[0].picture
             //現在沒有圖檔,先以替代文字代替
             img_.alt=tmp[0].picture
-            img_.src = "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-spacegray-202203?wid=470&hei=556&fmt=png-alpha&.v=1645066742664";
+            img_.src = tmp[0].url;
         }
     </script>
 </body>
