@@ -59,6 +59,7 @@
             if(xhr.readyState == 4 && xhr.status ==200){
                 iPadArray = JSON.parse(xhr.response)
                 afterResponse();
+                console.log(specArray)
             }
             else{
                 console.log('抓取資料失敗')
@@ -67,7 +68,7 @@
         xhr.open('GET',url)
         xhr.send();//去network看請求、回應
         //儲存 各規格 方便跌代
-        const specArray =[
+        let specArray =[
             {title:'顏色',key:'color',options:[], choosed:null},
             {title:'記憶體',key:'storage',options:[], choosed:null},
             {title:'網路',key:'network',options:[], choosed:null}
@@ -81,10 +82,10 @@
                         spec.options.push(value)
                 })
             })
-            console.log(specArray)
+            // console.log(specArray)
             //依規格【規格資料】造規格UI
             ul_spaecs.innerHTML=''
-            specArray.forEach(spec=>{
+            specArray.forEach((spec, index)=>{
                 let title = spec.title
                 let key = spec.key
                 let options = spec.options
@@ -132,8 +133,6 @@
             if(tmp.length!=1)return
             //目標資料就是tmp[0]
             span_price.innerHTML = tmp[0].price
-            // img_.src = tmp[0].picture
-            //現在沒有圖檔,先以替代文字代替
             img_.alt=tmp[0].picture
             img_.src = tmp[0].url
         }
