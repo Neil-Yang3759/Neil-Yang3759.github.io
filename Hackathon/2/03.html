@@ -25,16 +25,16 @@
 </head>
 <body>
     <header>
-        <input type="number" id="Input" class="w-100 vh-7 text-center bg-secondary text-light placeholder-glow fs-3" placeholder="Enter a four digits number! (no duplicate)" oninput="if(value>9999)value=9876;" />
+        <input type="number" id="Input" class="w-100 vh-7 text-center bg-secondary text-light placeholder-glow fs-3" placeholder="Enter a four digits number! (no duplicate)" oninput="if(value>9876)value=9876;" />
     </header>
     <main class="h-100 w-100 d-flex">
         <button id="Reset" class="vert btn-warning fs-3">Reset</button>
         <div id="container"></div>
         <button id="Answer" class="vert btn-danger fs-3">See Answer</button>
     </main>
-    <footer>
-        <button type="button" id="Enter" class=" vh-7 w-100  text-center btn-primary fs-3">Check Answer</button>
-    </footer>
+
+    <button type="button" id="Enter" class=" vh-7 w-100  text-center btn-primary fs-3">Check Answer</button>
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
     <script>
         let input = document.getElementById("Input");
@@ -54,12 +54,12 @@
         $('#Enter').click(function(){
             let input = $('#Input').val().split("");
             input = input.map(Number);
-            if($('#Input').val() < 0123){alert("Please enter again\nMust larger than 1234");}
+            if($('#Input').val() < 0123){alert("Please enter again\nMust larger than 0123");}
             else{
                 answer.forEach((element, index) => {
                     if(answer[index] == input[index]){++A;}
-                    else if(input.indexOf(element) !== -1){++B;}
-                    // console.log( input.indexOf(element) );
+                    else if(input.indexOf(element) !== -1){++B;}  
+                    // console.log( input.indexOf(element) );          
                     // console.log( input);
                 });
             }
@@ -73,7 +73,7 @@
             A = 0, B = 0;
         });
         $('#Answer').click(function(){
-            alert(answer);  
+            alert(answer);
         });
         $('#Reset').click(function(){
             window.location.reload();
